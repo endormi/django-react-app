@@ -5,12 +5,11 @@ The front-end for this web application was built using [React.js](https://reactj
 Install dependencies:
 
 ```
-yarn or yarn install
+npm install
 ```
 
 Run front-end:
 
 ```
-yarn start
+npm start
 ```
-

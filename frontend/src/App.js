@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         This is the <code>front-end</code> for this web application.
-        </p>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Test from "./Component/API/index";
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Route path="/" exact component={Test} />
+    </Router>
+    );
+  }
 }
 
 export default App;
