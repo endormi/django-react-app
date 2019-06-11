@@ -4,6 +4,12 @@ The backend for this web application was built using [Django](https://www.django
 
 Currently the database that I use is sqlite3, but I might change it to PostgreSQL later on.
 
+Install requirements:
+
+```
+pip install -r requirements.txt
+```
+
 Migrate:
 
 ```
