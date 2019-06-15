@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework import viewsets
+from .models import Language
+from .serializers import langSerializer
 
-@api_view(["GET"])
-def test(request):
-    tests = ["Test", "Test Django", "Test React.js", "Test API"]
-    return Response(status=status.HTTP_200_OK, data={"data": tests})
+class langView(viewsets.ModelViewSet):
+    queryset = Language.objects.all()
+    serializer_class = langSerializer
