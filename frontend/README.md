@@ -4,12 +4,18 @@ The front-end for this web application was built using [React.js](https://reactj
 
 Install dependencies:
 
-```
+```shell
 npm install
 ```
 
 Run front-end:
 
-```
+```shell
 npm start
+```
+
+Run build:
+
+```shell
+npm run build
 ```
