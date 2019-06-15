@@ -2,6 +2,6 @@
 
 Backend: Django
 
-Front-end: React.js
+Frontend: React.js
 
 ## Documentation coming soon..
