@@ -21,11 +21,3 @@ Run the server:
 ```python
 py manage.py runserver
 ```
-
-> I used [postman](https://www.getpostman.com/) to test the API
-
-Test API using **Postman's** GET request
-
-```shell
-http://127.0.0.1:8000/api/
-```
