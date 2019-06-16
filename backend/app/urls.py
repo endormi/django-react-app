@@ -5,7 +5,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('languages', views.langView)
-router.register('faangm_companies', views.faangmView)
+router.register('faangm', views.faangmView)
 
 
 urlpatterns = [

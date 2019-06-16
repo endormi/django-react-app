@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=25)),
-                ('paradigm', models.CharField(max_length=75)),
+                ('paradigm', models.CharField(max_length=100)),
                 ('created_by', models.CharField(max_length=50)),
             ],
         ),
