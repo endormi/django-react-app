@@ -1,6 +1,19 @@
+# Frontend
+/.pnp
+.pnp.js
+/build
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 node_modules
 *.log
+
+# ???
 *.pot
+
+# Backend
 *.pyc
 __pycache__/
 local_settings.py
