@@ -1,0 +1,17 @@
+# --------------------
+# Image 'django-react-app/backend' is built based on official Python Dockerfile.
+# --------------------
+
+FROM python:3
+
+RUN mkdir /backend
+
+WORKDIR /backend
+
+ADD requirements.txt /backend/
+
+RUN pip install -r requirements.txt
+
+ADD . /backend/
+
+EXPOSE 8000
