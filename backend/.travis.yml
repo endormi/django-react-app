@@ -1,0 +1,25 @@
+language: python
+
+cache: pip
+
+python:
+  - 3.7.2
+
+env:
+  - DJANGO_VERSION==2.1.7
+
+dist:
+  - xenial
+
+install:
+- pip install -r requirements.txt
+
+services:
+  - db.sqlite3
+
+before_script:
+  - touch travis_ci_db
+  - python manage.py migrate
+
+script:
+  - python manage.py test
