@@ -21,11 +21,3 @@ Run the server:
 ```python
 py manage.py runserver
 ```
-
-### Running with Docker
-
-Running build: (inside `/backend`)
-
-```
-docker build -t django-react-app .
-```
