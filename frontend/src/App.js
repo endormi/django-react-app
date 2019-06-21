@@ -23,7 +23,7 @@ class App extends Component {
         {this.state.languages.map(item => (
           <div key={item.id}>
             <h1>{item.name}</h1>
-            <h4>{item.paradigm}</h4>
+            <h5>{item.paradigm}</h5>
             <span>{item.created_by}</span>
           </div>
         ))}
