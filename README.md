@@ -12,4 +12,6 @@
 - [ ] - Dockerfile for backend
 - [ ] - NGINX Proxy for Docker
 
+> In order for the API to work, you must run the backend server.
+
 ## Documentation coming soon..

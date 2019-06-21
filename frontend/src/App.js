@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   state = {
-    languages: []
+    faangm: []
   };
 
   async componentDidMount() {
     try {
-      const res = await fetch('http://127.0.0.1:8000/languages/');
-      const languages = await res.json();
+      const res = await fetch('http://127.0.0.1:8000/faangm/');
+      const faangm = await res.json();
       this.setState({
-        languages
+        faangm
       });
     } catch (e) {
       console.log(e);
@@ -19,12 +22,18 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.languages.map(item => (
+      <div className="container">
+      <Navbar />
+      <br />
+      <h1>Faangm Companies</h1>
+      <p>See the list to understand what it means.</p>
+      <p>People normally use the <b>FANG</b> (Facebook, Apple, Netflix and Google) definition, but I wanted to include a couple more big tech companies.</p>
+        {this.state.faangm.map(item => (
           <div key={item.id}>
-            <h1>{item.name}</h1>
-            <h5>{item.paradigm}</h5>
-            <span>{item.created_by}</span>
+            <h3>{item.name}</h3>
+            <h5>{item.created}</h5>
+            <p>{item.location}</p>
+            <br />
           </div>
         ))}
       </div>
