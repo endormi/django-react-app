@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 
@@ -31,7 +32,7 @@ class App extends Component {
         {this.state.faangm.map(item => (
           <div key={item.id}>
             <h3>{item.name}</h3>
-            <h5>{item.created}</h5>
+            <span className="text-size">{item.created}</span>
             <p>{item.location}</p>
             <br />
           </div>

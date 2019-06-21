@@ -9,7 +9,7 @@ function Navbar() {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav">
-      <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
+      <a className="nav-item nav-link active" href="/">App</a>
       <a className="nav-item nav-link" href="https://github.com/endormi/django-react-app">Source Code</a>
     </div>
   </div>
