@@ -8,10 +8,9 @@
 
 ### To-Do
 
-- [X] - Reactify Django
 - [ ] - Dockerfile for backend
 - [ ] - NGINX Proxy for Docker
 
-> In order for the API to work, you must run the backend server.
+> In order for the API to work, you must run the [backend](https://github.com/endormi/django-react-app/tree/master/backend) server.
 
 ## Documentation coming soon..
