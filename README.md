@@ -8,7 +8,7 @@ NGINX: NGINX proxy with Docker
 
 ### To-Do
 
-- [ X ] - Reactify Django
+- [X] - Reactify Django
 - [ ] - Dockerfile for backend
 - [ ] - NGINX Proxy for Docker
 
