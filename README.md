@@ -8,8 +8,7 @@ NGINX: NGINX proxy with Docker
 
 ### To-Do
 
-- [ ] - Reactify Django
-- [ ] - Connect the API to React
+- [ X ] - Reactify Django
 - [ ] - Dockerfile for backend
 - [ ] - NGINX Proxy for Docker
 

@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import Test from "./Component/API/index";
 
 class App extends Component {
+  state = {
+    languages: []
+  };
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/languages/');
+      const languages = await res.json();
+      this.setState({
+        languages
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   render() {
     return (
-      <Router>
-        <Route path="/" exact component={Test} />
-    </Router>
+      <div>
+        {this.state.languages.map(item => (
+          <div key={item.id}>
+            <h1>{item.name}</h1>
+            <h4>{item.paradigm}</h4>
+            <span>{item.created_by}</span>
+          </div>
+        ))}
+      </div>
     );
   }
 }
