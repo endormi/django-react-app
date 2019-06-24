@@ -4,18 +4,18 @@ The frontend for this web application was built using [React.js](https://reactjs
 
 Install dependencies:
 
-```shell
+```sh
 yarn or yarn install
 ```
 
-Run front-end:
+Run frontend:
 
-```shell
+```sh
 yarn start
 ```
 
 Run build:
 
-```shell
+```sh
 yarn build
 ```
