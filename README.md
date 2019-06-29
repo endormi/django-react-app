@@ -6,11 +6,16 @@
 
 **NGINX**: NGINX proxy with Docker
 
-### To-Do
+## Running the server
 
-- [ ] - Dockerfile for backend
-- [ ] - NGINX Proxy for Docker
+You must have [docker](https://www.docker.com/) and [docker compose](https://docs.docker.com/compose/) installed.
 
-> In order for the API to work, you must run the [backend](https://github.com/endormi/django-react-app/tree/master/backend) server.
+```
+docker-compose up
+```
 
-## Documentation coming soon..
+Build
+
+```
+docker-compose build
+```
