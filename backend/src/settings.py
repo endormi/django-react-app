@@ -17,7 +17,7 @@ SECRET_KEY = '123'
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = '*'
 
 
 # Application definition
