@@ -14,7 +14,7 @@ You must have [docker](https://www.docker.com/) and [docker compose](https://doc
 docker-compose up
 ```
 
-Build
+Build:
 
 ```
 docker-compose build
@@ -24,4 +24,4 @@ docker-compose build
 
 If `docker-compose up` doesn't work for some reason, this is an additional way you can get this project to work.
 
-The frontend and the backend has simple instructions. Remember that you have to have both running, so you will have to use two terminals.
+The [backend](https://github.com/endormi/django-react-app/tree/master/backend) and the [frontend](https://github.com/endormi/django-react-app/tree/master/frontend) have simple instructions to get the server up and running. Remember that you have to have both running, so you will have to use two terminals.
