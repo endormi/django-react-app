@@ -2,22 +2,22 @@
 
 The backend for this web application was built using [Django](https://www.djangoproject.com/).
 
-Currently the database that I use is sqlite3.
+> Using the SQLite3 database.
 
 Install requirements:
 
-```shell
+```sh
 pip install -r requirements.txt
 ```
 
 Migrate:
 
-```python
+```sh
 py manage.py migrate
 ```
 
 Run the server:
 
-```python
+```sh
 py manage.py runserver
 ```

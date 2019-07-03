@@ -8,7 +8,7 @@ Install dependencies:
 yarn or yarn install
 ```
 
-Run frontend:
+Run server:
 
 ```sh
 yarn start
