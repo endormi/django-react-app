@@ -6,10 +6,10 @@ services:
     volumes:
       - ./backend/:/backend
     working_dir: /backend/
-    command: sh entry.sh
+    command: sh docker-compose-entrypoint.sh
   frontend:
     image: node:8.9
-    command: sh entry.sh
+    command: sh docker-compose-entrypoint.sh
     working_dir: /frontend
     volumes:
       - ./frontend/:/frontend
