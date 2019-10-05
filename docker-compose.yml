@@ -8,11 +8,11 @@ services:
     working_dir: /backend/
     command: sh docker-compose-entrypoint.sh
   frontend:
-    image: node:8.9
-    command: sh docker-compose-entrypoint.sh
-    working_dir: /frontend
+    image: node:10
     volumes:
       - ./frontend/:/frontend
+    working_dir: /frontend
+    command: sh docker-compose-entrypoint.sh
   nginx:
     image: nginx:latest
     ports:
