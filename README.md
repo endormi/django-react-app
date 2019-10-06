@@ -10,14 +10,16 @@
 
 You must have [docker](https://www.docker.com/) and [docker compose](https://docs.docker.com/compose/) installed.
 
-```
-docker-compose up
-```
-
 Build:
 
 ```
 docker-compose build
+```
+
+Running `docker-compose`:
+
+```
+docker-compose up
 ```
 
 ### Other option (for running the server)
