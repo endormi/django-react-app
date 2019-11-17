@@ -28,7 +28,6 @@ class App extends Component {
       <br />
       <h1>Faangm Companies</h1>
       <p>See the list to understand what it means.</p>
-      <p>People normally use the <b>FANG</b> (Facebook, Apple, Netflix and Google) definition, but I wanted to include a couple more big tech companies.</p>
         {this.state.faangm.map(item => (
           <div key={item.id}>
             <h3>{item.name}</h3>
