@@ -1,6 +1,6 @@
 # Django-React-App
 
-**Backend**: Django (**2.1.9**)
+**Backend**: Django (**2.2.4**)
 
 **Frontend**: React (**16.8.6**)
 
