@@ -2,7 +2,7 @@
 
 The backend for this web application was built using [Django](https://www.djangoproject.com/).
 
-> Using the SQLite3 database.
+> Using the PostgreSQL database.
 
 Install requirements:
 
