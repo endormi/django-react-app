@@ -10,6 +10,12 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
+Makemigrations:
+
+```sh
+py manage.py makemigrations app
+```
+
 Migrate:
 
 ```sh
