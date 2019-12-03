@@ -19,4 +19,5 @@ build
 __pycache__/
 local_settings.py
 env
+migrations
 __init__.py
