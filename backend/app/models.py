@@ -9,5 +9,6 @@ class Language(models.Model):
 
 class Faangm(models.Model):
     name = models.CharField(max_length=25)
-    created = models.CharField(max_length=4)
+    founders = models.CharField(max_length=255)
+    created = models.DateField(blank=True)
     location = models.CharField(max_length=50)

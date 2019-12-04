@@ -10,6 +10,8 @@ class langSerializer(serializers.ModelSerializer):
 
 
 class faangmSerializer(serializers.ModelSerializer):
+    created = serializers.DateField(format="%d-%m-%Y")
+
     class Meta:
         model = Faangm
-        fields = ('id', 'name', 'created', 'location')
+        fields = ('id', 'name', 'founders', 'created', 'location')
