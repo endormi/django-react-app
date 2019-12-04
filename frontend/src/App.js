@@ -29,6 +29,7 @@ class App extends Component {
                 <br />
                 <h1>Faangm Companies</h1>
                 <p>See the list to understand what it means.</p>
+                <p>Date format used: DD/MM/YYYY</p>
                 {this.state.faangm.map(item => {
                     return (
                         <div className="row">
@@ -37,9 +38,11 @@ class App extends Component {
                                     <Card.Header
                                         style={{
                                             textAlign: `center`,
+                                            fontSize: `18px`,
+                                            fontWeight: `bold`,
                                         }}
                                     >
-                                        {item.name}
+                                        Name: {item.name}
                                     </Card.Header>
                                     <Card.Body>
                                         <Card.Text
@@ -47,7 +50,15 @@ class App extends Component {
                                                 textAlign: `center`,
                                             }}
                                         >
-                                            {item.created}
+                                            Created: {item.created}
+                                        </Card.Text>
+                                        <Card.Text
+                                            style={{
+                                                textAlign: `center`,
+                                            }}
+                                        >
+                                            Founder(s):{' '}
+                                            {item.founders}
                                         </Card.Text>
                                         <Card.Text
                                             style={{
@@ -55,7 +66,7 @@ class App extends Component {
                                                 textAlign: `center`,
                                             }}
                                         >
-                                            {item.location}
+                                            Location: {item.location}
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
