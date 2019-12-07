@@ -1,6 +1,4 @@
 # Frontend
-/.pnp
-.pnp.js
 /build
 .DS_Store
 .env.local
@@ -20,3 +18,9 @@ __pycache__/
 env
 migrations
 __init__.py
+
+# vscode
+vscode/
+.classpath
+.project
+.settings/
