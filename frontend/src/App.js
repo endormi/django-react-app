@@ -38,19 +38,21 @@ class App extends Component {
                                     <Card.Header
                                         style={{
                                             textAlign: `center`,
-                                            fontSize: `18px`,
+                                            fontSize: `20px`,
                                             fontWeight: `bold`,
                                         }}
                                     >
                                         Name: {item.name}
                                     </Card.Header>
-                                    <Card.Body>
+                                    <Card.Body
+                                        style={{ fontSize: `17px` }}
+                                    >
                                         <Card.Text
                                             style={{
                                                 textAlign: `center`,
                                             }}
                                         >
-                                            Created: {item.created}
+                                            Founded: {item.created}
                                         </Card.Text>
                                         <Card.Text
                                             style={{
