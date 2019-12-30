@@ -27,3 +27,9 @@ Run the server:
 ```sh
 py manage.py runserver
 ```
+
+Running tests:
+
+```sh
+py manage.py test app
+```
