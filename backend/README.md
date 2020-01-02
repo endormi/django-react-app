@@ -13,23 +13,23 @@ pip install -r requirements.txt
 Makemigrations:
 
 ```sh
-py manage.py makemigrations app
+python manage.py makemigrations app
 ```
 
 Migrate:
 
 ```sh
-py manage.py migrate
+python manage.py migrate
 ```
 
 Run the server:
 
 ```sh
-py manage.py runserver
+python manage.py runserver
 ```
 
 Running tests:
 
 ```sh
-py manage.py test app
+python manage.py test app
 ```
