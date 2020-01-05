@@ -29,7 +29,7 @@ class App extends Component {
                 <br />
                 <h1>Faangm Companies</h1>
                 <p>See the list to understand what it means.</p>
-                <p>Date format used: DD/MM/YYYY</p>
+                <p>Date format used: DD-MM-YYYY</p>
                 {this.state.faangm.map(item => {
                     return (
                         <div className="row">
@@ -45,7 +45,7 @@ class App extends Component {
                                         Name: {item.name}
                                     </Card.Header>
                                     <Card.Body
-                                        style={{ fontSize: `17px` }}
+                                        style={{ fontSize: `18px` }}
                                     >
                                         <Card.Text
                                             style={{
