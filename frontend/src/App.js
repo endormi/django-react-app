@@ -27,9 +27,9 @@ class App extends Component {
             <div className="container">
                 <Navbar />
                 <br />
-                <h1>Faangm Companies</h1>
-                <p>See the list to understand what it means.</p>
-                <p>Date format used: DD-MM-YYYY</p>
+                <h1 style={{ textAlign: `center` }}>Faangm Companies</h1>
+                <p style={{ textAlign: `center` }}>See the list to understand what it means.</p>
+                <p style={{ textAlign: `center` }}>Date format used: DD-MM-YYYY</p>
                 {this.state.faangm.map(item => {
                     return (
                         <div className="row">
