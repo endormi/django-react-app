@@ -1,4 +1,4 @@
-# Django-React-App
+# Django-React-App [![Travis (.org)](https://img.shields.io/travis/endormi/django-react-app)](https://travis-ci.org/endormi/django-react-app)
 
 **Backend**: Django (**3.0**)
 
