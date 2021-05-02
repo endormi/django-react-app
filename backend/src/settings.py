@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '123'
+SECRET_KEY = ''
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -78,15 +78,17 @@ WSGI_APPLICATION = 'src.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-"""
-This is just a test user for this project
-"""
+name = os.environ.get('name')
+user = os.environ.get('user')
+password = os.environ.get('password')
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dra-db',
-        'USER': 'dra-user',
-        'PASSWORD': 'postdbuser23',
+        'NAME': name,
+        'USER': user,
+        'PASSWORD': password,
         'HOST': 'LOCALHOST',
         'PORT': '5432'
     }
