@@ -1,21 +1,33 @@
 # Frontend
 
-The frontend for this web application was built using [React.js](https://reactjs.org/) and for [eslint-config](https://github.com/endormi/eslint-config-endormi) my own NPM package.
+The frontend for this web application was built using [React.js](https://reactjs.org/) and used my own npm package for [eslint](https://github.com/endormi/eslint-config-endormi)-
 
 Install dependencies:
 
 ```sh
+# yarn
 yarn or yarn install
+
+# npm
+npm i or npm install
 ```
 
 Run server:
 
 ```sh
+# yarn
 yarn start
+
+# npm
+npm run start
 ```
 
 Run build:
 
 ```sh
+# yarn
 yarn build
+
+# npm
+npm run build
 ```
