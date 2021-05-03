@@ -4,6 +4,15 @@ The backend for this web application was built using [Django](https://www.django
 
 > Using the PostgreSQL database.
 
+Dependencies:
+
+```sh
+django-cors-headers
+djangorestframework
+psycopg2
+testfixtures
+```
+
 Install requirements:
 
 ```sh
