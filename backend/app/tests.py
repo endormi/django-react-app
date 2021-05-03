@@ -33,7 +33,9 @@ class FaangmTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_faangm_url_post(self):
-        # Ensure we can create a new object.
+        """
+        Ensure we can create a new object.
+        """
         data = {'name': 'Pied Piper', 'founders': 'Richard Hendricks', 'created': str_today_1(), 'location': 'Erlich Bachman\'s business incubator'}
         url = ('/faangm/')
         response = self.client.post(url, data, format='json')
